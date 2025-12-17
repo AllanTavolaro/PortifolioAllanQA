@@ -178,7 +178,7 @@ export default function Portfolio() {
 
       {/* Dynamic Background Noise/Grid */}
       <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-[0.03]" />
+        <div className="absolute inset-0 bg-[url('/PortifolioAllanQA/noise.svg')] opacity-[0.03]" />
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div
           className="absolute inset-0 bg-gradient-to-tr from-cyan-500/5 via-transparent to-purple-500/5"
