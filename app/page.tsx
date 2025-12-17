@@ -238,23 +238,23 @@ export default function Portfolio() {
               SISTEMA ONLINE // V2.0.24
             </div>
 
-            <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-4 md:mb-6">
               ALLAN <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">
                 TAVOLARO
               </span>
             </h1>
 
-            <p className="text-xl text-zinc-400 max-w-lg mb-10 leading-relaxed font-light">
+            <p className="text-base md:text-xl text-zinc-400 max-w-lg mb-10 leading-relaxed font-light">
               <strong className="text-white">QA Engineer Pleno</strong> & <strong className="text-white">Arquiteto de Automação</strong> criando sistemas de validação de alta performance e infraestrutura escalável de testes.
             </p>
 
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start w-full sm:w-auto px-4 sm:px-0">
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="#projetos"
-                className="px-8 py-4 bg-cyan-500 text-black font-bold rounded-lg hover:bg-cyan-400 transition-colors shadow-[0_0_20px_rgba(6,182,212,0.4)] flex items-center gap-2"
+                className="w-full sm:w-auto px-8 py-4 bg-cyan-500 text-black font-bold rounded-lg hover:bg-cyan-400 transition-colors shadow-[0_0_20px_rgba(6,182,212,0.4)] flex items-center justify-center gap-2"
               >
                 <Terminal className="w-5 h-5" />
                 VER_PROJETOS
@@ -265,7 +265,7 @@ export default function Portfolio() {
                 whileTap={{ scale: 0.95 }}
                 href="https://github.com/AllanTavolaro"
                 target="_blank"
-                className="px-8 py-4 bg-zinc-900 border border-zinc-700 text-white font-bold rounded-lg hover:border-cyan-500 hover:text-cyan-400 transition-all flex items-center gap-2"
+                className="w-full sm:w-auto px-8 py-4 bg-zinc-900 border border-zinc-700 text-white font-bold rounded-lg hover:border-cyan-500 hover:text-cyan-400 transition-all flex items-center justify-center gap-2"
               >
                 <Github className="w-5 h-5" />
                 PERFIL_GITHUB
@@ -314,8 +314,8 @@ export default function Portfolio() {
       </section>
 
       {/* Experience Section */}
-      <section className="py-32 relative text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="py-20 md:py-32 relative text-center">
+        <div className="max-w-4xl mx-auto px-4 md:px-6">
           <SectionTitle title="Log de Missões" subtitle="Experiência Profissional" />
 
           <div className="relative">
@@ -325,7 +325,7 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 30 }}
               viewport={{ once: true }}
-              className="relative z-10 bg-zinc-900 border border-zinc-800 p-8 rounded-2xl max-w-2xl mx-auto text-left hover:border-purple-500/50 transition-colors shadow-2xl"
+              className="relative z-10 bg-zinc-900 border border-zinc-800 p-6 md:p-8 rounded-2xl max-w-2xl mx-auto text-left hover:border-purple-500/50 transition-colors shadow-2xl"
             >
               <div className="absolute top-0 right-0 p-4 opacity-20">
                 <ShieldCheck className="w-20 h-20" />
@@ -356,8 +356,8 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section id="projetos" className="py-32 bg-zinc-900/20 relative">
-        <div className="max-w-7xl mx-auto px-6">
+      <section id="projetos" className="py-20 md:py-32 bg-zinc-900/20 relative">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
           <SectionTitle title="Módulos Implantados" subtitle="Projetos em Destaque" />
 
           <div className="grid md:grid-cols-2 gap-8 justify-center">
@@ -373,7 +373,7 @@ export default function Portfolio() {
       </section>
 
       {/* Skills Section */}
-      <section id="habilidades" className="py-32 px-6">
+      <section id="habilidades" className="py-20 md:py-32 px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
           <SectionTitle title="Arquitetura Técnica" subtitle="Capacidades do Sistema" />
 
@@ -403,19 +403,19 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contato" className="py-32 relative overflow-hidden">
+      <section id="contato" className="py-20 md:py-32 relative overflow-hidden">
         {/* Decorative background for contact */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-cyan-900/10" />
 
-        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <div className="max-w-4xl mx-auto px-4 md:px-6 text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             className="p-12 rounded-3xl bg-black border border-zinc-800 shadow-[0_0_50px_rgba(6,182,212,0.1)]"
           >
-            <h2 className="text-5xl font-bold mb-6 font-mono text-white">PRONTO PARA COLABORAR?</h2>
-            <p className="text-xl text-zinc-400 mb-10 max-w-xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 font-mono text-white">PRONTO PARA COLABORAR?</h2>
+            <p className="text-base md:text-xl text-zinc-400 mb-10 max-w-xl mx-auto">
               Inicialize um canal de comunicação para discutir estratégias de automação, cenários de teste e engenharia de qualidade.
             </p>
 
